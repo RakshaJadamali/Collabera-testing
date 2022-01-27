@@ -1,0 +1,48 @@
+class Amazon
+{
+	void buy()
+	{
+		System.out.println("Shopping");
+	}
+}
+class Clothing extends Amazon
+{
+	void buy()
+	{
+		System.out.println("Clothes");
+	}
+}
+class Electronics extends Amazon
+{
+	void buy()
+	{
+		System.out.println("Electronic goods");
+	}
+}
+class Pantry extends Amazon
+{
+	void buy()
+	{
+		System.out.println("Food");
+	}
+}
+class Stimulator
+{
+	static void choose(Amazon a)
+	{
+		a.buy();
+	}
+}
+class Mainclass
+{
+	public static void main(String[]args)
+	{
+		Clothing c=new Clothing();
+		Electronics e=new Electronics();
+		Pantry p=new Pantry();
+		Stimulator.choose(c);
+		Stimulator.choose(e);
+		Stimulator.choose(p);
+	}
+}
+	

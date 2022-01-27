@@ -1,0 +1,48 @@
+class UPI
+{
+	void pay()
+	{
+		System.out.println("Payment mode");
+	}
+}
+class Googlepay extends UPI
+{
+	void pay()
+	{
+		System.out.println("Pay using Gpay");
+	}
+}
+class Phonepe extends UPI
+{
+	void pay()
+	{
+		System.out.println("Pay using Phonepe");
+	}
+}
+class  Paytm extends UPI
+{
+	void pay()
+	{
+		System.out.println("Pay using Paytm");
+	}
+}
+class Stimulator
+{
+	static void pay(UPI a)
+	{
+		a.pay();
+	}
+}
+class Eg2
+{
+	public static void main(String[]args)
+	{
+		Googlepay g=new Googlepay();
+		Phonepe p=new Phonepe();
+		Paytm b=new Paytm();
+		Stimulator.pay(g);
+		Stimulator.pay(p);
+		Stimluator.pay(b);
+	}
+}
+		

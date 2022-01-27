@@ -1,0 +1,16 @@
+class Rectangle
+{	
+	static int area()
+	{
+		int w=1;
+		int h=2;
+		int res=w*h;
+		return res;
+	}
+	public static void main(String[]args)
+	{
+		int q=area();
+		System.out.println("Area of rectangle "+q);
+	}
+}
+		

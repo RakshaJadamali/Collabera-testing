@@ -1,0 +1,31 @@
+class Sample21
+{
+	int r=65;
+	void co()
+	{
+		System.out.println("Hello");
+	}
+}
+class Hahotta extends Sample21
+{
+	void disp()
+	{
+		System.out.println("Hey its disp");
+	}
+}
+class Eg10
+{
+	public static void main(String[]args)
+	{
+		Sample21 s=new Hahotta();
+		s.co();
+		System.out.println(s.r);
+		Hahotta h=(Hahotta) s;
+		h.disp();
+		h.co();
+		System.out.println(h.r);
+	}
+}
+		
+
+	

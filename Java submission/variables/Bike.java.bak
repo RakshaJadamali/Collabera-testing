@@ -1,0 +1,12 @@
+class Bike
+{
+	static String brand="honda";
+	static String col='black';
+	static int cost=500;
+	public static void main(String []args)
+	{
+		System.out.println("Bike cost is:"+cost);
+		System.out.println("Bike brand is:"+brand);
+		System.out.println("Bike colour is:"+col);
+		}
+}

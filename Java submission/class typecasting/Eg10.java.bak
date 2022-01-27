@@ -1,0 +1,31 @@
+class Cool4
+{
+	void add()
+	{
+		System.out.println("Its add  method");
+	}
+}
+class Goolata extends Cool4
+{
+	int r=7;
+	void dispu()
+	{
+		System.out.println("Hey its dispu");
+	}
+}
+class Eg10
+{
+	public static void main(String[]args)
+	{
+		Cool4 c4=new Goolata();
+		System.out.println(t3.r);
+		t3.disp();
+		Tisto1 t1=(Tisto1) t3;
+		System.out.println(t1.r);
+		t1.disp();
+		t1.uliya();
+	}
+}
+		
+
+	
